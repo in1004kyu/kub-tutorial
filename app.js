@@ -4,8 +4,8 @@ const app = express();
 
 app.get('/', (req, res) => {
   res.send(`
-    <h1>Hello from this NodeJS app!!!!</h1>
-    <p>Try sending a request to /error and see what happens</p>
+    <h1>Hello World!!!!</h1>
+    <p>/error 로 request를 보내면 무슨일이 벌어질까요</p>
   `);
 });
 

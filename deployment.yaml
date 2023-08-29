@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: second-app-deployment
+  name: first-app-deployment
 spec:
   replicas: 1
   selector:
     matchLabels:      
-      app: second-app
+      app: first-app
       tier: backend
   template:
     metadata:
       labels: 
-        app: second-app
+        app: first-app
         tier: backend
     spec:
       containers:
-        - name: second-node
-          image: in1004kyu/kub-first-app:2
+        - name: first-node
+          image: in1004kyu/kub-first-app
