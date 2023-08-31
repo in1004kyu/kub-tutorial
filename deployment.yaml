@@ -17,3 +17,9 @@ spec:
       containers:
         - name: first-node
           image: in1004kyu/kub-first-app
+          livenessProbe:
+            httpGet:
+              path: /
+              port: 8080
+            initialDelaySeconds: 5
+            periodSeconds: 10
