@@ -4,8 +4,9 @@ metadata:
   name: backend
 spec:
   selector:
-    app: first-app    
+    app: first-app
   ports:
     - protocol: 'TCP'
       port: 80
       targetPort: 8080
+  type: LoadBalancer
